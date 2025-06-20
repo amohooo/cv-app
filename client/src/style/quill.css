@@ -1,0 +1,232 @@
+/**
+ * ReactQuill Editor Styles
+ * WCAG 2.0 Compliance:
+ * - 1.3.1 Info and Relationships: Clear visual structure
+ * - 1.4.3 Contrast: Background color meets contrast requirements
+ * - 2.4.7 Focus Visible: Clear focus indicators
+ */
+.quill {
+  border-radius: var(--border-radius);
+}
+
+.ql-container {
+  background-color: transparent;
+}
+
+.ql-editor {
+  background-color: transparent;
+}
+
+.quill .ql-toolbar.ql-snow {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.quill .ql-container .ql-editor {
+  background-color: transparent;
+}
+
+.quill .ql-expanded {
+  z-index: 500;
+}
+
+/* Font Picker Styles */
+.ql-picker.ql-font {
+  .ql-picker-item {
+    font-size: 0;
+    &:before {
+      content: attr(data-value) !important;
+      font-size: 14px;
+    }
+  }
+}
+
+.ql-picker.ql-font {
+  .ql-active {
+    &:before {
+      content: attr(data-value) !important;
+      font-size: 14px;
+    }
+  }
+}
+
+/* Font Family Definitions */
+.ql-picker.ql-font .ql-picker-label[data-value="Roboto"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Roboto"]::before {
+  font-family: "Roboto", cursive;
+  content: "Roboto" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Lato"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Lato"]::before {
+  font-family: "Lato", cursive;
+  content: "Lato" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Arial"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Arial"]::before {
+  font-family: "Arial", sans-serif;
+  content: "Arial" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="SanSerif"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="SanSerif"]::before {
+  font-family: "San Serif", sans-serif;
+  content: "San Serif" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Courier"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Courier"]::before {
+  font-family: "Courier", sans-serif;
+  content: "Courier" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Verdana"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Verdana"]::before {
+  font-family: "Verdana", sans-serif;
+  content: "Verdana" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Helvetica"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Helvetica"]::before {
+  font-family: "Helvetica", sans-serif;
+  content: "Helvetica" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Monaco"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Monaco"]::before {
+  font-family: "Monaco", monospace;
+  content: "Monaco" !important;
+}
+
+/* Content Font Families */
+.ql-font-Roboto {
+  font-family: "Roboto";
+}
+
+.ql-font-Lato {
+  font-family: "Lato";
+}
+
+.ql-font-Arial {
+  font-family: "Arial";
+}
+
+.ql-font-SanSerif {
+  font-family: "San Serif";
+}
+
+.ql-font-Courier {
+  font-family: "Courier";
+}
+
+.ql-font-Verdana {
+  font-family: "Verdana";
+}
+
+.ql-font-Helvetica {
+  font-family: "Helvetica";
+}
+
+.ql-font-Monaco {
+  font-family: "Monaco";
+}
+
+/* Size Picker Styles */
+.ql-snow {
+  .ql-picker {
+    &.ql-size {
+      .ql-picker-label,
+      .ql-picker-item {
+        &::before {
+          content: attr(data-value) !important;
+        }
+      }
+    }
+  }
+}
+
+/* Content Display Styles */
+.content-display {
+  font-family: inherit !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  color: #333 !important;
+}
+
+.content-display p {
+  margin-bottom: 1em !important;
+}
+
+.content-display span {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  color: inherit !important;
+  line-height: inherit !important;
+}
+
+.content-display .ql-font-Verdana,
+.content-display .ql-font-Roboto,
+.content-display .ql-font-Lato,
+.content-display .ql-font-Arial,
+.content-display .ql-font-SanSerif,
+.content-display .ql-font-Courier,
+.content-display .ql-font-Helvetica,
+.content-display .ql-font-Monaco {
+  font-family: inherit !important;
+}
+
+/* Quill Editor Styles */
+.quill-editor {
+  background: white;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.quill-editor .ql-toolbar {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+}
+
+.quill-editor .ql-container {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: 1px solid #ddd;
+  min-height: 200px;
+}
+
+.quill-editor .ql-editor {
+  min-height: 200px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.quill-editor .ql-editor p {
+  margin-bottom: 1em;
+}
+
+.quill-editor .ql-editor h1,
+.quill-editor .ql-editor h2,
+.quill-editor .ql-editor h3,
+.quill-editor .ql-editor h4,
+.quill-editor .ql-editor h5,
+.quill-editor .ql-editor h6 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.quill-editor .ql-editor ul,
+.quill-editor .ql-editor ol {
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+
+.quill-editor .ql-editor a {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.quill-editor .ql-editor a:hover {
+  text-decoration: underline;
+}
