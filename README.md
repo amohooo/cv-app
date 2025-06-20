@@ -24,7 +24,7 @@ A full-stack web application for creating and managing CV/portfolio content with
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url> cv-app
+git clone https://github.com/amohooo/cv-app.git
 cd cv-app
 ```
 
