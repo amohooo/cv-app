@@ -12,7 +12,7 @@ console.log('DB_PORT:', process.env.DB_PORT);
 const sequelize = new Sequelize(
   process.env.DB_NAME || 'cv_database',
   process.env.DB_USER || 'root',
-  process.env.DB_PASSWORD || 'Hmhzalk1',
+  process.env.DB_PASSWORD || '********',
   {
     host: process.env.DB_HOST || 'localhost',
     port: process.env.DB_PORT || 3306,
